@@ -1,0 +1,164 @@
+/* 기본 테마 변수 (다크모드) */
+:root {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+  --card-bg: #1a1a1a;
+  --heading-color: #ffffff;
+  --btn-bg: hsl(0, 0%, 20%);
+  --btn-color: #ffffff;
+  --btn-hover-bg: hsl(75, 94%, 57%);
+  --btn-hover-color: hsl(0, 0%, 8%);
+}
+
+/* 라이트모드 테마 변수 */
+:root:not(.dark-mode) {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --card-bg: #1a1a1a;
+  --heading-color: #ffffff;
+  --btn-bg: hsl(0, 0%, 20%);
+  --btn-color: #ffffff;
+  --btn-hover-bg: hsl(75, 94%, 57%);
+  --btn-hover-color: hsl(0, 0%, 8%);
+}
+
+/* 테마 전환을 위한 스타일 */
+#theme-toggle:checked + label {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+#theme-toggle:checked ~ html {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* 테마 스위치 스타일링 */
+.theme-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.theme-switch label {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: var(--card-bg);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#theme-toggle {
+  display: none;
+}
+
+/* 기존 스타일에 변수 적용 */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 600px;
+  justify-content: top;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  margin: 0;
+  align-items: center;
+  text-align: center;
+}
+
+.card img {
+  width: 88px;
+  height: 88px;
+  margin: 0;
+  border-radius: 50%;
+  margin-top: 34px;
+}
+
+.card h1 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.card h2 {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+  font-size: 14px;
+  margin: 0;
+}
+
+.card h3 {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  color: var(--heading-color);
+  font-size: 14px;
+  margin-top: 34px;
+  margin-bottom: 24px;
+}
+
+.card .btn {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  align-self: left;
+  border-radius: 8px;
+  border: 0;
+  width: 280px;
+  height: auto;
+  margin-bottom: 14px;
+}
+
+.card .btn:hover {
+  cursor: url(./images/icons8-cursor-26.png), auto;
+  background-color: var(--btn-hover-bg);
+  color: var(--btn-hover-color);
+}
+.attribution {
+  font-family: "Inter", serif;
+  font-size: 8px;
+  color: var(--heading-color);
+  margin-bottom: 4px;
+}
+
+/* 버튼을 링크로 변경했으므로 스타일 수정 */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}

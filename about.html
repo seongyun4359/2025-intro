@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - 천성윤</title>
+    <link rel="stylesheet" href="./style/about-style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <h1>About Me</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-button">메인 이동</a></li>
+            <li>
+              <a href="study.html" class="nav-button">공부 페이지 이동</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="profile">
+        <div class="profile-content">
+          <div class="profile-info">
+            <h2>기본 정보</h2>
+            <p class="name">이름: 천성윤</p>
+            <p class="birth">생년월일: 2001년 11월 12일</p>
+            <p>출생: 경기도 성남</p>
+            <p class="birth">키: 180.3 cm</p>
+          </div>
+          <div class="profile-image">
+            <img src="assets/images/avatar.jpeg" alt="프로필 사진" />
+          </div>
+        </div>
+      </section>
+
+      <section class="favorites">
+        <h2>Favorites</h2>
+        <div class="tab-container">
+          <!-- 탭 버튼들 -->
+          <div class="tab-buttons">
+            <label for="soccer-tab" class="tab-button active">축구</label>
+            <label for="baseball-tab" class="tab-button">야구</label>
+            <label for="music-tab" class="tab-button">음악</label>
+          </div>
+
+          <!-- 탭 컨텐츠 -->
+          <input
+            type="radio"
+            id="soccer-tab"
+            name="tabs"
+            checked
+            class="tab-radio"
+          />
+          <input type="radio" id="baseball-tab" name="tabs" class="tab-radio" />
+          <input type="radio" id="music-tab" name="tabs" class="tab-radio" />
+
+          <div class="tab-contents">
+            <!-- 축구 컨텐츠 -->
+            <div class="tab-content soccer-content">
+              <div class="content-text">
+                <strong>축구</strong>
+                <p>
+                  주 포지션은 역발 왼쪽 풀백입니다 ! 좋아하는 팀은 토트넘입니다
+                  ⚽⚽ 가끔 친구들과 풋살하는 것도 좋아합니다. 손흥민 선수의
+                  열렬한 팬이에요. 주말마다 새벽에 일어나서 경기를 보는게 취미가
+                  되어버렸습니다 ㅎㅎ
+                </p>
+              </div>
+              <div class="image-slider">
+                <div class="slider-container">
+                  <img
+                    src="assets/images/hobby/soccer1.jpeg"
+                    alt="축구 이미지 1"
+                  />
+                  <img
+                    src="assets/images/hobby/soccer2.jpeg"
+                    alt="축구 이미지 2"
+                  />
+                  <img
+                    src="assets/images/hobby/soccer3.jpeg"
+                    alt="축구 이미지 3"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- 야구 컨텐츠 -->
+            <div class="tab-content baseball-content">
+              <div class="content-text">
+                <strong>야구 관람</strong>
+                <p>
+                  이번 시즌에 야구에 입덕한 엘린이입니다 !! 엘지 팬분들이
+                  있다면, 반가워요. 잠실야구장 직관이 취미가 되어버렸네요.
+                  올해는 엘지가 우승할 것 같은 예감이 듭니다 ㅎㅎ
+                </p>
+              </div>
+              <div class="image-slider">
+                <div class="slider-container">
+                  <img
+                    src="assets/images/hobby/baseball1.jpeg"
+                    alt="야구 이미지 1"
+                  />
+                  <img
+                    src="assets/images/hobby/baseball2.jpeg"
+                    alt="야구 이미지 2"
+                  />
+                  <img
+                    src="assets/images/hobby/baseball3.jpeg"
+                    alt="야구 이미지 3"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- 음악 컨텐츠 -->
+            <div class="tab-content music-content">
+              <div class="content-text">
+                <strong>음악</strong>
+                <p>
+                  인디밴드, 알앤비, 힙합을 주로 좋아합니다 !! 요즘은 새소년,
+                  새소년, 잔나비 같은 밴드를 즐겨 듣고 있어요. 힙합은 비비,
+                  릴러말즈, 애쉬아일랜드를 좋아합니다. 취미로 기타도 배우고
+                  있어요 !
+                </p>
+              </div>
+              <div class="image-slider">
+                <div class="slider-container">
+                  <img
+                    src="assets/images/hobby/music1.jpeg"
+                    alt="음악 이미지 1"
+                  />
+                  <img
+                    src="assets/images/hobby/music2.jpeg"
+                    alt="음악 이미지 2"
+                  />
+                  <img
+                    src="assets/images/hobby/music3.jpeg"
+                    alt="음악 이미지 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education">
+        <h2>학력</h2>
+        <div class="current-edu">
+          <h3>정보융합학부 비주얼테크놀로지 전공</h3>
+          <p>2021년 3월 입학</p>
+          <p>2027년 2월 졸업 예정</p>
+        </div>
+        <ul class="edu-history">
+          <li>광운대학교 정보융합학부 재학</li>
+          <li>가천대학교 컴퓨터공학과 중퇴</li>
+          <li>동광고등학교 졸업</li>
+          <li>성남중학교 졸업</li>
+          <li>성남 검단초등학교 졸업</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 천성윤. @About Me Homepage/Introduction to Interactive Media
+      </p>
+    </footer>
+  </body>
+</html>
